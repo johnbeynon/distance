@@ -28,7 +28,7 @@ export default function PostcodeTravelCalculator() {
     for (const postcode of postcodeList) {
       try {
         const response = await fetch(
-          `https://api.openrouteservice.org/v2/directions/driving-car?api_key=eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6ImQyMTkzMmRkNjljYjQ5MWNhOGM3MDUyYzg4NDcxMTFjIiwiaCI6Im11cm11cjY0In0=&start=${encodeURIComponent(postcode)},UK&end=GU1 4RR,UK`
+          `https://api.openrouteservice.org/v2/directions/driving-car?api_key=eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6ImQyMTkzMmRkNjljYjQ5MWNhOGM3MDUyYzg4NDcxMTFjIiwiaCI6Im11cm11cjY0In0=&start=${encodeURIComponent(postcode)},UK&end=51.24249,-0.57834`
         );
         
         // Try alternative: use nominatim for geocoding + distance calculation
