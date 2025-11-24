@@ -1,4 +1,4 @@
-import PostcodeTravelCalculator from '../index.js'
+import PostcodeTravelCalculator from '../index.jsx'
 
 function App() {
   return <PostcodeTravelCalculator />
